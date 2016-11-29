@@ -1,0 +1,23 @@
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'CallbackConverterFactory'
+
+    publishedGroupId = 'com.rzagorski'
+    libraryName = 'CallbackConverterFactory'
+    artifact = 'callbackconverterfactory'
+
+    libraryDescription = 'Get an access to Retrofit converter factory and have a possibility to convert model or detect errors passed in API returned model'
+
+    siteUrl = 'https://github.com/RobertZagorski/CallbackConverterFactory'
+    gitUrl = 'https://github.com/RobertZagorski/CallbackConverterFactory.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'RobertZagorski'
+    developerName = 'Robert Zagórski'
+    developerEmail = ''
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
