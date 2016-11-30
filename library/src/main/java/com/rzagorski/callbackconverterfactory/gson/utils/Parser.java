@@ -1,4 +1,4 @@
-package com.rzagorski.utils;
+package com.rzagorski.callbackconverterfactory.gson.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;

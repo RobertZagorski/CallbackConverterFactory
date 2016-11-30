@@ -1,9 +1,9 @@
-package com.rzagorski;
+package com.rzagorski.callbackconverterfactory.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
-import com.rzagorski.interfaces.RequestParser;
-import com.rzagorski.utils.Parser;
+import com.rzagorski.callbackconverterfactory.gson.interfaces.RequestParser;
+import com.rzagorski.callbackconverterfactory.gson.utils.Parser;
 
 import java.io.IOException;
 

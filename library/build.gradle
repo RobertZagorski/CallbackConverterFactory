@@ -12,4 +12,7 @@ test {
 dependencies {
     compile gsonConverter
     compile retrofit
+    testCompile mockito
+    testCompile junit
+    testCompile mockwebserver
 }

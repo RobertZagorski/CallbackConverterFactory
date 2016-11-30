@@ -1,10 +1,10 @@
-package com.rzagorski;
+package com.rzagorski.callbackconverterfactory.gson;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.reflect.TypeToken;
-import com.rzagorski.interfaces.RequestParser;
-import com.rzagorski.interfaces.ResponseParser;
+import com.rzagorski.callbackconverterfactory.gson.interfaces.RequestParser;
+import com.rzagorski.callbackconverterfactory.gson.interfaces.ResponseParser;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
@@ -36,7 +36,11 @@ public final class CallbackGsonConverterFactory extends Converter.Factory {
      * decoding from JSON (when no charset is specified by a header) will use UTF-8.
      */
     public static CallbackGsonConverterFactory create(Gson gson) {
-        return new CallbackGsonConverterFactory(gson, null, null);
+        return create(gson, null, null);
+    }
+
+    public static CallbackGsonConverterFactory create(RequestParser requestParser, ResponseParser responseParser) {
+        return create(new Gson(), requestParser, responseParser);
     }
 
     public static CallbackGsonConverterFactory create(Gson gson, RequestParser requestParser, ResponseParser responseParser) {
